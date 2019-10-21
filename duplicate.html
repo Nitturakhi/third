@@ -1,0 +1,26 @@
+Remove Duplicate Values from a JavaScript Array
+<head>
+    <title></title>
+    <button onClick="getUnique()">hello</button>
+</head>
+<body>
+<script>
+var names = ["Johnny", "Peter", "Clark", "Harry", "John", "Alice","thanuja","thanuja"];    
+    // Defining function to get unique values from an array
+    function getUnique(){
+        var uniqueArray = [];
+        
+        // Loop through array values
+        for(i=0; i < names.length; i++){
+            if(uniqueArray.indexOf(names[i]) ===-1) {
+                uniqueArray.push(names[i]);
+            }
+        }
+        return uniqueArray;
+    }
+    
+    
+    var uniqueNames = getUnique(names);
+    console.log(uniqueNames); // Prints: ["Johnny", "Peter", "Clark", "Harry", "Alice"]
+</script>
+</body>

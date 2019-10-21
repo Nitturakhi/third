@@ -1,0 +1,21 @@
+<html>
+<head>
+    <title></title>
+    <button onClick="testodd()" >click</button>
+    <div id="demo">
+</head>
+<body>
+    <script>
+function testodd(num) {
+  if((num & 1) == 0){
+    return true
+  }
+  return false;
+}
+
+var output = testodd(23);
+alert(output); // --> false
+
+</script>
+</body>
+</html>

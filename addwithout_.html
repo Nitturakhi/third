@@ -1,0 +1,23 @@
+
+<script>
+var getSum = function (a, b) {
+    if (b == 0) {
+        return a;
+    } 
+    else {
+        return getSum( a ^ b , (a & b) << 1)
+    }
+}
+var z=getSum(5,47);
+console.log(z);
+/*
+var a=[2];
+var b=[3];
+const getSum = (a, b) => {
+  const firstArr = new Array(a).fill(true);
+  const secondArr = new Array(b).fill(true);
+  var z= firstArr.concat(secondArr);
+  alert(z);
+}*/
+getSum();
+</script>
